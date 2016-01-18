@@ -5,9 +5,9 @@ class DataTweaker
 	public static void main ( String[] args )
 	{
 		Scanner scan = new Scanner( System.in );
-		float[] line = new float[13];
+		float[] line = new float[14];
 
-		for (int count = 0; count <=12; count ++) 
+		for (int count = 0; count < 14; count ++) 
 		{
 			line[count] = scan.nextFloat();
 			System.out.println("data[" + count + "] = " + line[count] );

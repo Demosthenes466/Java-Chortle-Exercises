@@ -2,7 +2,7 @@ import java.io.* ;
 
 class Weight
 {
-  int[] data;
+  private int[] data;
   
   // Constructor
   Weight(int[] init)
@@ -13,13 +13,12 @@ class Weight
     
     // Copy values from the 
     // input data to data.
-    for (int j=0; j < data.length; j++)
-    {
+    for (int j=0; j < data.length; j++) {
       data[j] = init[j];
     }
   }
 
-  float average() {
+  public  float average() {
     float sum = 0;
     for (int j=0; j < data.length; j++)
     {
@@ -28,14 +27,27 @@ class Weight
     float avg = sum/data.length;
     return avg;
   }
+
+  public float subAverage( int start, int end) {
+    float sum = 0;
+    int length = 0;
+    for (int j=start; j <= end; j ++) {
+      sum += data[j];
+      length += 1;
+    }
+    float subAvg = sum/length;
+    return subAvg;
+  }
   
   //Print
-  void String() {
+  public String toString() {
   {
-    for(int j=0; j < data.length; j++)
-    {
-      System.out.println("Data[" + j +"] = " + data[j]);
-    }
+
+    return Integer.toString(data[1]);
+    // for(int j=0; j < data.length; j++)
+    // {
+    //   return data[j];
+    // }
   }
 }
 }

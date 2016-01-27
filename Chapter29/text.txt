@@ -1,0 +1,8 @@
+//please print this
+do not print this
+//plox print
+do not do this
+/* this is the special line
+it should also print this 
+*/ it should not output this
+//burt it should this

@@ -6,11 +6,13 @@ class Microwave {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter cook time: ");
 
-		numbers = scan.nextLine();
-		if (numbers.length < 3) {
+		String numbers = scan.nextLine();
+		if (numbers.length() < 3) {
 			System.out.println("Your Time: 0:" + numbers);
+		} else if (numbers.length() == 3) {
+			System.out.println("Your Time: " + numbers.charAt(0) + ":" + numbers.substring(1) );
 		} else {
-			System.out.println("Your Time: " + )
+			System.out.println("Your Time: " + numbers.charAt(0) + numbers.charAt(1) + ":" + numbers.substring(2));
 		}
 	}
 }
